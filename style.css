@@ -7,7 +7,6 @@ header {
     color: #a52d56;
     text-align: center;
     font-family: 'Martian Mono', monospace;
-    position: static;
     padding-top: 100px;
 }
 
@@ -32,7 +31,6 @@ p {
     line-height: 1.6em;
 }
 
-
 .sidenav {
     display: flex;
     flex-direction: row;
@@ -47,12 +45,11 @@ p {
     display: block;
     padding: 1em;
     transition: all 0.5s;
-    position: static;
+    font-weight: bold;
 }
 
 .sidenav a:hover {
     color: #064579;
-    text-decoration: underline;
     transform: scale(1.5);
 }
 
@@ -64,4 +61,78 @@ p {
 
 .socials a {
     color:#a52d56;
+    transition: all 0.05s;
+}
+
+.socials a:hover {
+    color:#064579;
+    transform: rotate(1turn);
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;  
+    height: 50em;
+    width: 80%;
+    margin: 0 auto;
+    gap: 0.6em;
+}
+
+.project h3{
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Martian Mono';
+    padding-left: 10px;
+    margin-bottom: -0.2em;
+    color: #064579;
+    width: 100%;
+    margin-top: 0.2em;
+}
+
+.project{
+    flex-basis: calc(50% - 0.5em);
+    height: 30%;
+    width: calc(50% - 0.5em);
+    transform: scale(0.95);
+    border: #064579 solid;
+    border-radius: 5px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f1ddd4;
+}
+
+.project img {
+    object-fit: scale-down;
+}
+
+.project ul{
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1em;
+    color:#a52d56;
+    width: 70%;
+    height: 95%;
+    margin-top: 0.1em;
+    padding-top: 0.2em;
+}
+
+.project-marker{
+    width: 28%;
+    margin: auto;
+    margin-right: 5px;
+}
+
+.project-marker svg{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+
+.project-blurb{
+
+    width: 70%;
+    height: 90%;
 }

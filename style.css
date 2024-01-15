@@ -84,55 +84,36 @@ p {
     margin: 0;
     font-weight: normal;
     font-family: 'Martian Mono';
-    padding-left: 10px;
-    margin-bottom: -0.2em;
     color: #064579;
-    width: 100%;
-    margin-top: 0.2em;
+    width: auto;
+    height: auto;
+    padding: 5px 10px 5px 10px;
 }
 
 .project{
-    flex-basis: calc(50% - 0.5em);
     height: 30%;
     width: calc(50% - 0.5em);
     transform: scale(0.95);
     border: #064579 solid;
-    border-radius: 5px;
+    border-radius: 10px;
     object-fit: contain;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: #f1ddd4;
-}
-
-.project img {
-    object-fit: scale-down;
+    overflow: hidden;
+    background-color: #fbf2e2;
 }
 
 .project ul{
     font-family: 'Karla', sans-serif;
-    font-size: 1.1em;
+    font-size: 110%;
     color:#a52d56;
-    width: 70%;
-    height: 95%;
-    margin-top: 0.1em;
-    padding-top: 0.2em;
+    height: auto;
+    justify-content: baseline;
+    margin: 0;
 }
 
-.project-marker{
-    width: 28%;
-    margin: auto;
-    margin-right: 5px;
-}
-
-.project-marker svg{
-    width: 80%;
-    height: 80%;
-    margin-bottom: 20px;
-}
-
-.project-blurb{
-
-    width: 70%;
-    height: 90%;
+.project button{
+    background-color: #e29649;
+    border: black solid;
+    height: 20%;
+    width: 30%;
 }

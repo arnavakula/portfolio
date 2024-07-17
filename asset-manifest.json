@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.e8c3e63b.css",
-    "main.js": "/personal-website/static/js/main.fee8184a.js",
-    "index.html": "/personal-website/index.html",
-    "main.e8c3e63b.css.map": "/personal-website/static/css/main.e8c3e63b.css.map",
-    "main.fee8184a.js.map": "/personal-website/static/js/main.fee8184a.js.map"
+    "main.css": "/arnavakula.github.io/static/css/main.e8c3e63b.css",
+    "main.js": "/arnavakula.github.io/static/js/main.fee8184a.js",
+    "index.html": "/arnavakula.github.io/index.html",
+    "main.e8c3e63b.css.map": "/arnavakula.github.io/static/css/main.e8c3e63b.css.map",
+    "main.fee8184a.js.map": "/arnavakula.github.io/static/js/main.fee8184a.js.map"
   },
   "entrypoints": [
     "static/css/main.e8c3e63b.css",

@@ -1,28 +1,34 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import React from 'react';
-import { Link } from "react-router-dom";
+import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
+import { Link, useLocation } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ open, setOpen }) => {
+  const tab = useLocation().pathname;
+  const links = [
+    { route: '/', name: 'Home' },
+    { route: '/about', name: 'About' },
+    { route: '/projects', name: 'Projects' },
+    // { route: '/experience', name: 'Experience' },
+    { route: '/skills', name: 'Skills' },
+  ]
+
   return (
-    <div className=' drop-shadow-lg bg-[#353c4a] h-[80px] flex justify-between items-center'>
-        <div className='w-[30vw] mr-[5vw] flex justify-start gap-[5vw] ml-[2vw]'>
-          <Link to="/"><h1 className='font-sans text-black text-2xl text-white font-medium'><em>Home</em></h1></Link>
-          <Link to="/about"><h1 className='font-sans text-black text-2xl text-white font-medium'><em>About Me</em></h1></Link>
-        </div>
-
-        <div className='flex items-center gap-[20px]'>
-          <div className='w-[20vw] mr-[5vw] flex justify-around'>
-              <a href='https://www.instagram.com/arnav.akula/' target='_blank' rel='noreferrer'><IconButton ><InstagramIcon sx={{ color: '#FFF', fontSize: 30 }}/></IconButton></a>
-              <a href='http://www.linkedin.com/in/arnavakula/' target='_blank'><IconButton ><LinkedInIcon sx={{ color: '#FFF', fontSize: 30 }}/></IconButton></a>
-              <a href='https://github.com/arnavakula/' target='_blank'><IconButton ><GitHubIcon sx={{ color: '#FFF', fontSize: 30 }}/></IconButton></a>
-          </div>
-        </div>
-    </div>
-    
+    <>
+      {/* <MenuRoundedIcon style={{color: 'white'}} onClick={() => setOpen(prev => !prev)}/>  */}
+      <nav className='h-[8vh] font-poppins flex text-[#c4c4c4] gap-[4vw] pt-[2vh] justify-center lg:justify-start lg:pl-[5vw]'>
+        {open && (
+          <>
+            {links.map((link, i) => (
+              <div key={i} className='flex flex-col items-center'>
+                <Link to={link.route}><h1 className={`${tab === link.route && 'text-white font-bold'}`}>{link.name}</h1></Link>
+                {tab === link.route && (
+                  <CircleRoundedIcon fontSize='small' className='scale-50 mt-[-0.5vh] text-[#F06543] hover:opacity-80' />
+                )}
+              </div>
+            ))}
+          </>
+        )}
+      </nav>
+    </>
   )
 }
 

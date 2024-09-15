@@ -30,7 +30,7 @@ const ProjectBox = ({ proj, isOdd }) => {
             <div className=''>
                 <div className="relative overflow-hidden flex flex-col gap-[2vh]">
                     <a href={proj.repoUrl} target='_blank' rel='noreferrer' className='group overflow-hidden rounded-lg'>
-                        <img src={proj.image} alt={proj.name} className="h-[40vh] w-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75" />
+                        <img src={proj.image} alt={proj.name} className="h-[45vh] w-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75" />
 
                         <div className="absolute inset-0 flex gap-[2vw] items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h1 className='text-[2rem] text-white'>open repo</h1>

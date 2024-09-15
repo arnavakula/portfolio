@@ -82,7 +82,7 @@ const Projects = () => {
       <div className='flex flex-col lg:grid grid-cols-2 gap-[5vh] '>
         {projects.map((proj, i) => (
           <div key={i}
-            className="w-[80vw] lg:w-[40vw] max-w-[650px] max-w-[75%] rounded-lg border mx-auto even:bg-[#d9d9d9] even:text-black odd:bg-[#676cdb] odd:text-white even:border-white odd:border-black font-poppins overflow-hidden">
+            className="w-[80vw] lg:w-[42.5vw] rounded-lg mx-auto even:bg-[#d9d9d9] even:text-black odd:bg-[#676cdb] odd:text-white even:border-white odd:border-black font-poppins overflow-hidden">
             <ProjectBox proj={proj} isOdd={i % 2 === 1} />
           </div>
         ))}

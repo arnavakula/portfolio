@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e8c3e63b.css",
-    "main.js": "/portfolio/static/js/main.fee8184a.js",
+    "main.css": "/portfolio/static/css/main.23cd5d02.css",
+    "main.js": "/portfolio/static/js/main.790d1308.js",
+    "static/media/aident.png": "/portfolio/static/media/aident.c1b40b97ea5d0a9e023b.png",
+    "static/media/flourish.png": "/portfolio/static/media/flourish.5330fc703012ee6d7e6f.png",
+    "static/media/campsage.png": "/portfolio/static/media/campsage.e03974697c1192c41c3d.png",
+    "static/media/about_pic.png": "/portfolio/static/media/about_pic.1eaf80ba1f76adc55b71.png",
+    "static/media/mentalwellconnect.png": "/portfolio/static/media/mentalwellconnect.39452f8d42f0c7fa76b6.png",
+    "static/media/fantasychatbot.png": "/portfolio/static/media/fantasychatbot.9e6b25c14903a99a92ab.png",
+    "static/media/volleyviz.png": "/portfolio/static/media/volleyviz.7e70ef5d3ceaeb9ff8c6.png",
+    "static/media/headshot.jpeg": "/portfolio/static/media/headshot.e047996529509a45d920.jpeg",
+    "static/media/mid_headshot.jpeg": "/portfolio/static/media/mid_headshot.d758ad31d791d32f7550.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.e8c3e63b.css.map": "/portfolio/static/css/main.e8c3e63b.css.map",
-    "main.fee8184a.js.map": "/portfolio/static/js/main.fee8184a.js.map"
+    "main.23cd5d02.css.map": "/portfolio/static/css/main.23cd5d02.css.map",
+    "main.790d1308.js.map": "/portfolio/static/js/main.790d1308.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8c3e63b.css",
-    "static/js/main.fee8184a.js"
+    "static/css/main.23cd5d02.css",
+    "static/js/main.790d1308.js"
   ]
 }
